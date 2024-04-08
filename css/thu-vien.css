@@ -1,0 +1,366 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Nunito:wght@200;300&family=Prata&display=swap');
+/* CSS Document */
+/*--code cho mobible---mobile first--*/
+body{ 
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+}
+h1,h2,h3{
+	font-family: 'Prata', serif;
+	margin: 20px 0;
+}
+h1{ font-size: 30.5px;}
+h2{
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+}
+p{  
+	padding: 3px 0;
+	line-height: 30px;
+	text-align: justify;
+}
+a{
+	color:#272727;
+	padding: 3px 8px 3px 0px;
+	text-decoration: none;
+}
+.text-primary{color: #212121}
+.btn-primary{
+	background: linear-gradient(45deg, rgba(255,205,238,1) 0%, rgba(217,202,255,1) 44%, rgba(135,228,255,1) 100%);
+	text-decoration: none;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+	
+}
+
+*{box-sizing: border-box;}
+.container{width: 100%}
+.row{ display: flex; flex-wrap: wrap;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{ padding: 20px;}
+
+.img-100{
+	width: 100%; 
+	height: auto;
+}
+/*--code khu nay la 2 tablet--ipad-thiet bi rong tu 600 tro len--*/
+@media (min-width: 600px)
+{
+	.container{width: 95%; margin:auto;}
+	.col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+.justify-content-center{ justify-content: center}
+.justify-content-between{ justify-content: space-between}
+.justify-content-around{ justify-content:space-around}
+.justify-content-start{ justify-content:flex-start}
+.justify-content-end{ justify-content:flex-end}
+/*-- STYLE KHOI CHIEU DOC CUA FLEX*/
+.align-items-start{ align-items: flex-start}
+.align-items-end{ align-items: flex-end}
+.align-items-center{ align-items:center}
+.align-items-stretch{ align-items:stretch}
+/*--code khu nay la PC-thiet bi rong tu 100px tro len--*/
+@media (min-width: 1000px)
+{
+	.container{width: 80%; margin:auto;}
+	.col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+#hero{
+	background: linear-gradient(45deg, rgba(255,223,244,0.7707457983193278) 0%, rgba(212,212,252,0.7959558823529411) 39%, rgba(165,223,254,0.7819502801120448) 100%);
+}
+#hero h2{ 
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 300;
+}
+section{ padding: 50px 0}
+section .container{padding: 30px 0}
+
+#resume h1{
+	background: linear-gradient(45deg, rgba(255,223,244,0.7707457983193278) 0%, rgba(212,212,252,0.7959558823529411) 39%, rgba(165,223,254,0.7819502801120448) 100%);
+	padding: 50px;
+}
+
+#project a{
+	padding: 10px 20px;
+	font-size: 13px;
+}
+#resume h3 { margin: 10px 0;}
+#resume p{ margin: 2px 0px}
+
+.tieu-de h2{
+	font-family: 'Prata', serif;
+	font-size: 30px;
+	font-weight: 500px;
+}
+
+
+
+/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  padding: 20px 0;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #4A4A4A;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: linear-gradient(45deg, rgba(255,223,244,0.7707457983193278) 0%, rgba(212,212,252,0.7959558823529411) 39%, rgba(165,223,254,0.7819502801120448) 100%);
+  color: #1D1D1D;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: #1E1E1E;
+  position: relative;
+}
+
+/* Timeline dot  */
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 2.5px solid #2D2D2D;
+}
+
+#skill h2{
+	padding: 0px 0px 0 20px;
+}
+#skill .tieu-de{
+	margin-top: 30px;
+}
+.dau-gach {
+	width: 80px;
+	height: 3px;
+	background: linear-gradient(45deg, rgba(255,182,231,1) 0%, rgba(183,183,255,1) 47%, rgba(141,206,255,1) 100%);
+	margin: 44px 10px 0 ;
+}
+#about .dau-gach{
+	margin: 45px 10px 0px;
+}
+
+#service .item
+{
+	color: #D9D9D9;
+	text-align: center;
+	padding: 50px;
+}
+#service .item img{ width: 200px; height: 200px; margin: auto; display: block; border-radius: 50%;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  justify-content: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 15px;
+	margin: 0 7px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: linear-gradient(45deg, rgba(255,223,244,0.7707457983193278) 0%, rgba(212,212,252,0.7959558823529411) 39%, rgba(165,223,254,0.7819502801120448) 100%);
+	border-radius: 5px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background:  linear-gradient(45deg, rgba(255,223,244,0.7707457983193278) 0%, rgba(212,212,252,0.7959558823529411) 39%, rgba(165,223,254,0.7819502801120448) 100%);
+	border-radius: 5px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+
+#contact .icon-tron{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #141414;
+	color: #EFEFEF;
+	margin: 16px 0 0 13px ;
+	line-height: 51px;
+	font-size: 20px;
+	text-align: center;
+
+}
+#contact .background{
+	background: linear-gradient(45deg, rgba(255,223,244,0.7707457983193278) 0%, rgba(212,212,252,0.7959558823529411) 39%, rgba(165,223,254,0.7819502801120448) 100%);
+	display: flex;
+}
+#contact .chu{
+	margin: 18px 13px; 0 10px;
+}
+#contact h4{
+	margin: 0;
+}
+#contact p{
+	margin: 5px 0 0 0;
+	padding: 0;
+	line-height: 25px;
+}
+.chu a{
+	color: #1D1D1D;
+	padding: 0;
+}
+.chu i{
+	margin: 8px 3px 5px 0;
+	font-size: 18px;
+}
+#contact form input,#contact textarea{
+	display: block;
+	width: 100%; margin: 13px 0px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #A8B5FF;
+}
+.br-lienhe{
+	background: #151515;
+	padding: 20px;
+	border-radius: 10px;
+}
+#contact .btn-primary{
+	margin: 0px auto;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #1E1E1Ed;
+	font-size: 15px;
+}
+
+
+#service .icon-tron{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: linear-gradient(45deg, rgba(255,223,244,0.7707457983193278) 0%, rgba(212,212,252,0.7959558823529411) 39%, rgba(165,223,254,0.7819502801120448) 100%);
+	color: #101010;
+	margin: 15px auto ;
+	line-height: 110.5px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.testimonials {
+	margin-top: 80px;
+}
+.service{
+	text-align: center;
+}
+.service h4{
+	margin-bottom: 0;
+}
+.service p{
+	text-align: center;
+	padding: 0;
+	margin-top: 18px;
+	line-height: 25px;
+}
+.danhgia{
+	margin: 30px 0 0 0;
+	background: #151515;
+}
+.danhgia h3{
+	line-height: 25px;
+	margin-bottom: 0;
+}
+.danhgia p{
+	text-align: center;
+	padding: 0;
+	margin-bottom: 0;
+}
+#banner-danhgia .dau-gach{
+	margin: 13px auto;
+	width: 120px;
+}
+
+
+.box{
+	width: 400px;
+	margin: 20px 0 0 20px;
+	padding: 0 110px;
+	text-align: center;
+}
+.box p{ 
+	text-align: center;
+	padding: 5px 20px;	
+}
+.box i{ margin-bottom: 10px;}
+.box .btn-primary{ border-radius: 5px;}
+
+
+.element{
+	font-family: 'Prata', serif;
+	font-weight: 500px;
+	font-size: 28px;
+}
+
